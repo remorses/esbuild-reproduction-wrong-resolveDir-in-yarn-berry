@@ -1,0 +1,42 @@
+{
+  "inputs": {
+    "../../example/folder/index.ts": {
+      "bytes": 19,
+      "imports": []
+    },
+    "../../example/index.ts": {
+      "bytes": 25,
+      "imports": [
+        {
+          "path": "../../example/folder/index.ts"
+        }
+      ]
+    },
+    "../src/index.ts": {
+      "bytes": 48,
+      "imports": [
+        {
+          "path": "../../example/index.ts"
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "../bundle/index.js": {
+      "imports": [],
+      "exports": [],
+      "inputs": {
+        "../../example/folder/index.ts": {
+          "bytesInOutput": 11
+        },
+        "../../example/index.ts": {
+          "bytesInOutput": 0
+        },
+        "../src/index.ts": {
+          "bytesInOutput": 18
+        }
+      },
+      "bytes": 82
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+    "private": true,
+    "scripts": {
+        "repro": "cd repro && yarn build"
+    },
+    "workspaces": [
+        "example",
+        "repro"
+    ],
+    "devDependencies": {
+        "@types/node": "^14.14.16"
+    }
+}
